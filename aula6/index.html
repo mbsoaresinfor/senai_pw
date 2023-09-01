@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <script src="funcoes.js"></script>
+
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>    
+</head>
+<body>
+
+    <script >
+        console.log("iniciando script");
+        // somente codigo js
+        var nome = "pedro";
+        var idade = 18;
+
+        mostrarNome(nome);
+        escreverNaTela();
+
+        var v1 = prompt("digite o valor 1");
+        var v2 = prompt("digite o valor 2");
+        if(v1 == "SAIR" || v2 == "SAIR"){
+            alert("SAINDO DO PROGRAMA");
+        }else{
+            var soma = parseInt(v1) + parseInt(v2);
+            if(isNaN(soma)){
+                alert("vc digitou um valor invalido");    
+            }else{
+                alert("soma foi: " + soma);
+            }
+        }
+
+        console.log("finalizando script");
+    </script>
+
+</body>
+</html>

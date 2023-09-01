@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    
+    <form   action="processar_cadastro.php" method="post">
+        Nome: <input type="text" name="nome" id="nome" 
+            minlength="3" maxlength="10" required />
+        </br>
+        Senha: <input type="password" name="pwd" id="pwd"/>
+        </br>
+        Prontuário Médico</br>
+        <textarea name="prontuario" id="prontuario" rows="5" cols="20">            
+        </textarea>
+        </br>
+        Selecione uma estação </br>
+        <select name="estacao" id="estacao">
+            <option value="primavera">Primavera</option>
+            <option value="verao">Verão</option>
+            <option value="outono">Outono</option>
+            <option value="inverno">Inverno</option>
+        </select>
+        <input type="submit" value="Salvar"/>
+    </form>
+
+</body>
+</html>
