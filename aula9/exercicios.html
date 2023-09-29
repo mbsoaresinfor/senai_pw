@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+        function validar(){
+            var usuario = document.getElementById("user").value;
+            var senha = document.getElementById("pwd").value;
+            if(usuario == "admin" && senha == "123"){
+                // habilita botao.
+                document.getElementById("div_botao").style.display = "block";
+            }else{
+                alert("usuário ou senha inválido");                
+            }
+        }
+
+        function abrir(){
+            window.open("exercicios2.html");
+        }
+
+    </script>
+    <h3>Login<br></h3>
+    
+    <table>
+        <tr>
+            <td>Usuário:</td>
+            <td><input type="text" name="user" id="user"></td>
+        </tr>
+        <tr>
+            <td>Senha:</td>
+            <td><input type="password" name="pwd" id="pwd"></td>
+        </tr>
+        <tr>
+            <td><input type="button" onclick="validar()" value="validar"></td>
+        </tr>
+
+    </br>
+
+    <div id="div_botao" style="display:none">
+        <input type="button" 
+            onclick="abrir()"             
+            value ="abrir"/>
+    </div>
+
+    </table>
+    
+</body>
+</html>
