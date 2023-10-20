@@ -1,0 +1,19 @@
+p{
+    color : red;
+    font-weight: bold;
+}
+
+.link_branco{
+    color: white;
+    background-color: green;
+}
+
+.botao_branco{
+    color: white;
+    background-color: green;
+}
+
+.botao_azul{
+    color: blue;
+    background-color: green;
+}
