@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+     initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<form name="f1" action="processar.php" method="post">
+    Nome:
+    <input type="text" name="nome" id="nome"/>
+    <br>
+    Idade:
+    <input type="text" name="idade" id="idade" size="3"/>
+    <br>
+    Senha: 
+    <input type="password" name="senha" id="senha" size="50"/>
+    <br>
+    Obs: <textarea name="obs" id="obs" rows="3" cols="30">
+    </textarea>
+    <br>
+    Estação: <select name="estacao" id="estacao">
+        <option value="primavera">Primavera</option>
+        <option value="verao">Verão</option>
+        <option value="outono">Outono</option>
+        <option value="inverno">Inverno</option>
+    </select>
+    <br>
+    Comidas preferidas:<br>
+    Arroz<input type="checkbox" name="c1" id="c1">
+    Feijão<input type="checkbox" name="c2" id="c2">
+    Massa<input type="checkbox" name="c3" id="c3">
+    Carne<input type="checkbox" name="c4" id="c4">
+<br>
+times de futebol<br>
+Inter <input type="radio" 
+        name="times" id="times" value="inter"/>
+Gremio <input type="radio" 
+        name="times" id="times" value="gremio"/>
+<br>
+<input type="hidden" name="operacao" id="operacao"
+value="cadastrar"/>
+
+    <input type="submit" value="pesquisar"/>
+</form>
+
+<input type="button" onclick="alert('ola mundo')"
+    value="teste de botao"/>
+
+
+
+
+</body>
+</html>
