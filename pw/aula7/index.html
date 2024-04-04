@@ -1,0 +1,33 @@
+<html>
+<script>
+function eventoBotao(){
+    alert("OLA");
+}
+
+function mostrarTexto(){
+    var nome = document.getElementById("nome");    
+    if(nome.value == "carro"){
+        nome.value = "";
+    }
+}
+function mostrarNumeros(){
+    var valor = document.getElementById("numeros");        
+    if(isNaN(valor.value)){
+        valor.value = "";
+    }
+}
+
+</script>
+
+<form>
+    <input type="button"
+        onclick="eventoBotao()"
+        value="clique"/> </br>
+    <input type="text" name="nome" id="nome"
+        onkeyup="mostrarTexto()"/></br>
+ somente numeros
+   <input type="text" name="numeros" id="numeros"
+        onkeyup="mostrarNumeros()"/>
+</form>
+
+</html>

@@ -1,0 +1,56 @@
+<html>
+<script>
+    function espacosHTML(quantidade){
+    for(var i=0; i < quantidade;i++){
+        document.write("&nbsp;")
+    }
+}
+</script>
+
+<body>
+isso aqui html 
+<script>espacosHTML(5);</script>
+continuo meu html
+
+</body>
+
+<script >
+function exercicio7(){
+    var nome= prompt("digite nome produto");
+    var preco= prompt("digite preço produto");
+    if(parseInt(preco) > 100){
+        alert("produto maior que 100");
+    }else{
+        alert("produto menor que 100");
+    }
+}
+
+function exercicio8(){
+    for(var i=0; i < 10;i++){
+        document.write("<b>marcelo</b></br>");
+        document.write("<b>poa</b></br></br>");        
+    }
+}
+
+function validarDados( nome, idade){
+    if(nome == ""){
+        alert("preencha seu nome");
+        return;
+    }
+    if(nome.length > 20){
+        alert("Nome invalido, temque ter menos de 20 char");
+        return;
+    }
+    if(idade < 0 || idade > 120){
+        alert("idade invalida");
+        return;
+    }
+
+    alert("sucesso no cadastro");
+}
+
+validarDados("marcelo",120);
+
+</script>
+
+</html>
