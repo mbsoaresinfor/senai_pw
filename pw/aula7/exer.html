@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+    function validar(){
+        var prod = document.getElementById("prod").value;
+        var preco = document.getElementById("preco").value;
+        if(prod === ""){
+            alert("Preencha o campo produto");
+            return false;
+        }
+        if(preco === ""){
+            alert("Preencha o campo preco");
+            return false;
+        }
+        if(isNaN(preco)){
+            alert("Preencha o campo preco somente numeros");
+            return false;
+        }
+        if(prod.toString().length < 4){
+            alert("Nome do produto tem que ter no minimo 4 caracteres");
+            return false;
+        }
+        return true;
+    }
+</script>
+
+    <form name="f" action="processaProduto.php" method="post">
+        Produto: 
+        <input type="text" name="prod" id="prod"/>
+        <br>
+        Preço: 
+        <input type="text" name="preco" id="preco"/>
+        <br>
+        <input type="submit" onclick="return validar()"/>
+    </form>
+    
+
+</body>
+</html>
