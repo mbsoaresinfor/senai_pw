@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function validar(){
+            let nome = document.getElementById("nome").value;
+            let senha = document.getElementById("senha").value;
+            if(nome == "brasil" && senha == "123"){
+                alert("seja bem vindo");
+            }else{
+                alert("erro na validacao");
+            }
+        }
+        var contador=0;
+        function mostraRespostas(){
+            var respostas = "";
+            respostas = respostas + "1. Request é a chamada para o servidor e a resposta é "
+            + " que o server retorna ao cliente<br>";
+
+            respostas = respostas + "2. 404<br>";
+            respostas = respostas + "3. Get, Post, Delete, put <br>";
+            respostas = respostas + "4. Hospedar recursos";
+            respostas = respostas + "5. localhost/faculdade/index.html<br>";
+            respostas = respostas + "6. Navegador (html, css, js) / Servidor (php, java, c#)<br>";
+            respostas = respostas + "7. Para validar formularios e dar mais interativadas em nossas páginas. No browser<br>";
+            respostas = respostas + "<br><b>Vc já clicou " + (contador++) + "</b>";
+            document.getElementById("respostas").innerHTML = respostas;            
+
+        }
+    </script>
+
+    <form>
+        Nome: <input type="text" id="nome"/><br>
+        senha: <input type="text" id="senha"/><br>
+        <input type="submit" value="ok" onclick="return validar()"/>
+    </form>
+    <br>
+    
+    <input type="button"   value="Mostras as respostas"
+    onclick="mostraRespostas()"/>
+
+    <div id="respostas"></div>
+    
+</body>
+</html>
