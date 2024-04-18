@@ -12,8 +12,10 @@
             let senha = document.getElementById("senha").value;
             if(nome == "brasil" && senha == "123"){
                 alert("seja bem vindo");
+                return true;
             }else{
                 alert("erro na validacao");
+                return false;
             }
         }
         var contador=0;
@@ -24,7 +26,7 @@
 
             respostas = respostas + "2. 404<br>";
             respostas = respostas + "3. Get, Post, Delete, put <br>";
-            respostas = respostas + "4. Hospedar recursos";
+            respostas = respostas + "4. Hospedar recursos<br>";
             respostas = respostas + "5. localhost/faculdade/index.html<br>";
             respostas = respostas + "6. Navegador (html, css, js) / Servidor (php, java, c#)<br>";
             respostas = respostas + "7. Para validar formularios e dar mais interativadas em nossas páginas. No browser<br>";
@@ -34,7 +36,7 @@
         }
     </script>
 
-    <form>
+    <form method="post" action="pag_server.php">
         Nome: <input type="text" id="nome"/><br>
         senha: <input type="text" id="senha"/><br>
         <input type="submit" value="ok" onclick="return validar()"/>
