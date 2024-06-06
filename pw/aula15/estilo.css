@@ -1,0 +1,14 @@
+.titulo_azul{
+	color: blue;
+}
+
+.titulo_vermelho{
+	color: red;
+}
+
+p {
+  color: blue;
+  font-family: courier;
+  font-size: 160%;
+}
+
