@@ -1,0 +1,31 @@
+<html>
+<body>
+<a href='listar_aluno.php'> Principal</a><br>
+
+cadastro de aluno <br>
+
+<script>
+	function validar(){
+		var nome = document.getElementById("nome").value;
+		if(nome == ""){
+			alert("digite seu nome");
+			return false;
+		}
+		return true;
+			
+	}
+</script>
+
+<form action="salvar_aluno.php" method="post">
+
+Nome: <input type="text" name="nome" id="nome"/>
+<br>
+Idade <input type="text" name="idade" id="idade"/>
+<br>
+<input type="submit" value="salvar" onclick="return validar();"/>
+
+</form>
+
+</body>
+
+</html>
