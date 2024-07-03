@@ -22,7 +22,8 @@ $query = mysqli_query($con,$sql);
 $temregistro=false;
 while($linha = mysqli_fetch_array($query)){
 		echo $linha["id"] . " -  " . $linha["nome"] . " ".$linha["idade"] .
-		"<a href='remover_aluno.php?id=" . $linha["id"] .  "'> Remover </a> " .
+		"<a href='remover_aluno.php?id=" . $linha["id"] .  "'> Remover </a> -- " .
+		"<a href='atualizar_aluno.php?id=" . $linha["id"] .  "'> Atualizar </a> " .
 		"<br>";
 		$temregistro = true;
 }	
